@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# cache parsel and package-lock
+.parcel-cache
+package-lock.json
