@@ -1,0 +1,81 @@
+#team {
+  padding: 114px 0;
+}
+.team__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px;
+}
+.team__card {
+  width: 260px;
+  margin: 0 15px 60px;
+}
+.team__image {
+  height: 260px;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.team__name {
+  font-weight: $_700;
+  font-size: $_24;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: $_black-gray;
+  margin-bottom: 5px;
+}
+.team__post {
+  margin-bottom: 18px;
+  span {
+    font-weight: $_400;
+    font-size: $_18;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $_red;
+  }
+}
+.team__text {
+  margin-bottom: 37px;
+  p {
+    font-weight: $_400;
+    font-size: $_18;
+    line-height: 21px;
+    color: $_gray;
+  }
+}
+.team__social {
+  display: flex;
+}
+.team__social--icon {
+  margin-right: 5px;
+  width: 39px;
+  height: 39px;
+  border: 1px solid $_col_icons;
+  &:last-child {
+    margin-right: 0;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    i {
+      font-size: 19px;
+      color: $_col_icons;
+    }
+  }
+}
+.fa-brands {
+}
+.fa-facebook-f {
+}
+.fa-twitter {
+}
+.fa-linkedin {
+}

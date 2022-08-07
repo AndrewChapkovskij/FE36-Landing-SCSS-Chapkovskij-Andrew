@@ -5,12 +5,15 @@
   }
 }
 .features__wrap {
-  margin: 0 -15px;
+  margin: 0 -15px -90px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   @media (max-width: 1199px) {
     justify-content: space-around;
+  }
+  @media (max-width: 767px) {
+    margin: 0 -15px -40px;
   }
 }
 .features__card {
