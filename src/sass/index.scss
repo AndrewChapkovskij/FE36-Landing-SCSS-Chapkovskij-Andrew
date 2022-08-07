@@ -5,6 +5,9 @@
 @import '../sass/features.scss';
 @import '../sass/work.scss';
 @import '../sass/team.scss';
+@import '../sass/slider.scss';
+@import '../sass/download.scss';
+@import '../sass/footer.scss';
 * {
   margin: 0;
   padding: 0;
@@ -33,4 +36,55 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  a {
+    font-weight: $_900;
+    font-size: $_24;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $_write;
+    padding: 20px 40px;
+    background-color: $_red;
+    transition: 0.3s;
+    text-align: center;
+
+    @media (max-width: 575px) {
+      font-size: 20px;
+      padding: 15px 20px;
+    }
+
+    &:hover {
+      background-color: #e71414;
+    }
+    &:active {
+      background-color: #ff4343;
+      box-shadow: 4px 4px 30px #ff4343;
+    }
+  }
+}
+.social {
+  display: flex;
+}
+.social__icon {
+  margin-right: 5px;
+  width: 39px;
+  height: 39px;
+  border: 1px solid $_col_icons;
+  &:last-child {
+    margin-right: 0;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    i {
+      font-size: 19px;
+      color: $_col_icons;
+    }
+  }
 }
