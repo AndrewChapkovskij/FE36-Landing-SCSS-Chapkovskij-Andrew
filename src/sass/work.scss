@@ -6,12 +6,19 @@
 }
 .work__item {
   margin: 1px;
-  width: 320px;
-  height: 320px;
+  width: 330px;
+  height: 340px;
   flex-grow: 1;
   cursor: pointer;
   position: relative;
-
+  @media (max-width: 1199px) {
+    width: 220px;
+    height: 246px;
+  }
+  @media (max-width: 767px) {
+    width: 134px;
+    height: 150px;
+  }
   .work__item--text {
     display: flex;
     justify-content: center;

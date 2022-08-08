@@ -18,12 +18,13 @@
 html {
   font-size: $main_size;
   font-family: $font_family;
-
+  @media (max-width: 1199px) {
+    font-size: $tablet_size;
+  }
   @media (max-width: 767px) {
     font-size: $mobile_size;
   }
 }
-
 .container {
   max-width: 1170px;
   margin: auto;

@@ -2,11 +2,31 @@
 }
 .footer-top {
   padding: 71px 0;
+  @media (max-width: 767px) {
+    padding: 32px 0;
+  }
   background-color: #353c65;
+}
+.footer__wrap {
+  margin: 0 -15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 .footer__item {
   width: 370px;
-  align-self: stretch;
+  margin: 0 15px;
+  @media (max-width: 767px) {
+    margin: 0 15px 25px;
+    width: auto;
+    &:last-child {
+      margin: 0 15px;
+    }
+  }
 }
 .footer__item--title {
   font-weight: $_700;
