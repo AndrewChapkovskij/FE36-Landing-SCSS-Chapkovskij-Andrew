@@ -14,3 +14,10 @@ $(document).ready(function () {
     // autoplaySpeed: 3000,
   })
 })
+
+let mobileMenuBtn = querySelector('.nav-mobile__btn')
+let mobileMenuList = querySelector('.nav-mobile__list')
+
+mobileMenuBtn.addEventListener('click', (event) => {
+  mobileMenuList.styleList.toggle('active')
+})
