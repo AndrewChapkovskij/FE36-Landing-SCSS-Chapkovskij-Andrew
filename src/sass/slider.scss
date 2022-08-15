@@ -3,12 +3,13 @@
 .slider_item {
   display: flex;
   align-items: stretch;
+
   @media (max-width: 767px) {
     flex-direction: column;
   }
 }
 .slider__image {
-  padding: 0 50% 50% 0;
+  padding: 0 50% 35% 0;
   position: relative;
   @media (max-width: 767px) {
     padding: 0 0 50% 0;

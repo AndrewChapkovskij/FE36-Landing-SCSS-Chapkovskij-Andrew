@@ -28,6 +28,7 @@
 }
 
 .header-top__logo {
+  flex-grow: 0.2;
   margin: 0 15px;
   @media (max-width: 767px) {
     margin: 0 0 0 15px;
@@ -46,24 +47,29 @@
 }
 .navigation {
   margin: 0 15px;
-  display: flex;
   flex-grow: 1;
   @media (max-width: 767px) {
     display: none;
   }
 }
+.navigation__items {
+  display: flex;
+}
 .navigation__item {
-  padding: 35px 0 32px;
   border-bottom: 3px solid transparent;
-  text-align: center;
   flex-grow: 1;
   transition: ease 0.5s;
-  display: block;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $_write;
-  font-size: $_13;
-  font-weight: $_700;
+
+  a {
+    padding: 35px 0 32px;
+    text-align: center;
+    display: block;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $_write;
+    font-size: $_13;
+    font-weight: $_700;
+  }
 
   &:hover {
     border-bottom: 3px solid #babbc5;
@@ -84,8 +90,8 @@
 .nav-mobile__btn {
   cursor: pointer;
   border: 1px solid $_write;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   position: relative;
   i {

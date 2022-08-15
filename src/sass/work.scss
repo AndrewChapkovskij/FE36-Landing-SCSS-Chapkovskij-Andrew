@@ -34,6 +34,7 @@
     width: 100%;
     height: 100%;
     transition: 0.5s;
+    padding: 5px;
 
     h3 {
       font-weight: $_900;
@@ -42,12 +43,14 @@
       color: $_write;
       margin-bottom: 25px;
       font-size: $_24;
+      text-align: center;
     }
     span {
       font-weight: $_400;
       line-height: 21px;
       color: $_write;
       font-size: $_18;
+      text-align: center;
     }
   }
   &:hover .work__item--text {

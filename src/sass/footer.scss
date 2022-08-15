@@ -48,7 +48,10 @@
   }
 }
 .footer__social {
-  justify-content: space-evenly;
+  justify-content: center;
+  .social__icon {
+    margin-right: 15px;
+  }
 }
 .fa-brands {
 }
